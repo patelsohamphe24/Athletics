@@ -1,0 +1,15 @@
+HOW TO RUN THE WEBSITE
+======================
+Windows : double-click  start.bat
+Mac     : double-click  start.command   (or run ./start.sh in Terminal)
+Linux   : ./start.sh
+
+It installs what it needs the first time, starts the server and opens
+http://localhost:3000 in your browser. Keep the black window open.
+Admin password: iitbhu11   (click "Admin" at the top right)
+
+Do NOT double-click public/index.html - a browser cannot run the backend by itself.
+(If you do, the site still opens in OFFLINE MODE and the admin password still works,
+but changes are saved only in that one browser and Excel/Google sync is unavailable.)
+
+TO PUT IT ON THE INTERNET: see DEPLOY-QUICKSTART.md (Render).

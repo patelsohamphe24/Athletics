@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: iitbhu-athletics-portal
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    disk:
+      name: athletics-data
+      mountPath: /app/data
+      sizeGB: 1
+    envVars:
+      - key: ADMIN_PASSWORD
+        value: iitbhu11
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: DATA_DIR
+        value: /app/data
